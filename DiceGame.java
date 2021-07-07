@@ -4,6 +4,11 @@ import java.util.Scanner;
 public class DiceGame {
 
     public static void main(String[] args) {
+        System.out.println("What is your name? ");
+        Scanner scan = new Scanner(System.in);
+        String name = scan.next();
+        System.out.println("Hello, " + name + "!");
+
         System.out.println("Rolling the dice...");
         Random rand = new Random();
         int dice1 = rand.nextInt(5) + 1;
